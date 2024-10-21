@@ -14,4 +14,4 @@ EXPOSE 5000
 
 EXPOSE 65432
 
-CMD ["sh", "-c", "python3 app.py & sleep 5; python3 simple_client_for_test.py"]
+CMD ["sh", "-c", "python3 app.py"]
