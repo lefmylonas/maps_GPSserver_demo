@@ -4,7 +4,7 @@ import socket
 LOCAL_HOST = '0.0.0.0'
 LOCAL_PORT = 65432
 
-TARGET_HOST = '192.168.188.239'  # VM's IP address (target address)
+TARGET_HOST = '10.1.6.233'  # VM's IP address (target address)
 TARGET_PORT = 65432  # Replace with the target server's port
 
 def handle_client(client_socket):
