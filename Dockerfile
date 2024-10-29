@@ -12,6 +12,6 @@ WORKDIR /home/ubuntu
 
 EXPOSE 5000
 
-EXPOSE 65432
+EXPOSE 8001
 
 CMD ["sh", "-c", "python3 app.py"]

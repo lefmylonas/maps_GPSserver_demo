@@ -71,9 +71,9 @@ def start_gps_server(host, port, webserver_url):
 def run_web_server():
     app.run(debug=True, use_reloader=False, host='0.0.0.0', port=5000)
 
-if __name__ == "__main__":qq
+if __name__ == "__main__":
     hostIP = getenv("GPS_SERVER_IP", "0.0.0.0")
-    hostPort = int(getenv("GPS_SERVER_PORT", 65432))
+    hostPort = int(getenv("GPS_SERVER_PORT", 8001))
     webserver_url = getenv("WEB_SERVER_URL", "http://127.0.0.1:5000/update-coordinates")
 
     # Create threads for the GPS server and the Flask web server
