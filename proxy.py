@@ -21,11 +21,11 @@ def handle_client(client_socket):
             remote_socket.sendall(client_data)
 
             # Receive the response from the target server and send it back to the client
-            server_data = remote_socket.recv(4096)
-            if not server_data:
-                break  # End the loop if there's no more data from the server
+            # server_data = remote_socket.recv(4096)
+            # if not server_data:
+            #     break  # End the loop if there's no more data from the server
 
-            client_socket.sendall(server_data)
+            # client_socket.sendall(server_data)
 
     client_socket.close()
 
